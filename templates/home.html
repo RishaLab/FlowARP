@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlowARP</title>
+</head>
+<body>
+    <h1 class="head">FlowARP</h1>
+        <h2>Visualizing Control Flows in Programming</h2>
+    
+
+        Enter C++ Code below and press Generate.<br>
+        Download the marker using the link given below.<br>
+        Use the given marker to visualize the AR model. <br>
+
+        <form id="content" action = "http://localhost:5000/generate" method = "post">
+
+
+            <div style="width: 50%; margin: auto;font-family: 'Courier New', Courier, monospace; margin-top: 40px; margin-bottom: 30px; text-align: left; background-color: rgb(112, 199, 233); border-radius: 5px;">
+            
+        
+            <br><br>    
+             <textarea style="width: 100%;" rows="20" name="nm" class="input" id="search-input">// Add functions here
+
+#include <iostream>
+
+using namespace std;
+
+int Add(int x, int y){
+    int result = x + y;
+};
+
+int Multiply(int x, int y){
+    int result = x * y;
+    Print_Result();
+};
+
+void Input_Params(int *x, int *y){
+    cin >> *x;
+    cin >> *y;
+}
+
+void Print_Result(){
+    // do something
+}
+
+void Calculate(){
+    int x, y;
+    Input_Params();
+    Add();
+    Multiply();
+}
+
+             </textarea>                
+             <br><br><br><br>
+                <div style="font-weight:bolder; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+                    int main() {
+                    <br><br>    
+                    <textarea style="width: 100%;" rows="10" name="nm2" class="input2" id="search-input2">// Define the main function here
+
+Calculate();
+return 0;
+                    </textarea>
+                    <br><br>
+                            }
+                    <br><br>
+
+                </div>
+
+            </div>
+
+
+                <button type="submit" id="submit-btn" >Generate AR model</button>
+        </form><br>
+        
+        <a href="/static/marker.jpeg" download>
+            <img style="width: 100px; height: 100px;" src="/static/marker.jpeg" alt="W3Schools">
+        </a>
+        <br>
+        Click on the marker to download.
+              
+</body>
+
+
+</script>
+
+<style>
+
+.head{
+    color: rgb(0, 0, 0);
+}
+
+   body {
+       padding: 30px;
+       text-align: center;
+  background-color: rgb(112, 199, 233);
+  color: rgb(2, 1, 1);
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+</style>
+
+</html>

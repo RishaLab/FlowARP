@@ -1,0 +1,54 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+
+        </head>
+
+            <!-- x z y -->
+            <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+            <!-- include ar.js for A-Frame -->
+            <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+        <body>
+
+        <div>
+            
+            <a-scene { display: block; width: 50%; }>
+        
+
+        <a-cylinder rotation='-80 0 0' position='0 0.0 0.0' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 0;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 0;" material='opacity: 0;' width=2 position = "0 0.15 0.0" value="main()"></a-text>
+
+        <a-cylinder rotation='-80 0 0' position='0 0.0 0.5' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 4000;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 4000;" material='opacity: 0;' width=2 position = "0 0.15 0.5" value="Calculate()"></a-text>
+        <a-box position='0 0.0 0.0' animation="property: position; to: 0 0.0 0.5; dur: 500; delay: 3000; loop: true;" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = "blue"></a-box>
+
+        <a-cylinder rotation='-80 0 0' position='0 0.0 1.0' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 8000;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 8000;" material='opacity: 0;' width=2 position = "0 0.15 1.0" value="Input_Params()"></a-text>
+        <a-box position='0 0.0 0.5' animation="property: position; to: 0 0.0 1.0; dur: 500; delay: 7000; loop: true;" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = "blue"></a-box>
+
+        <a-cylinder rotation='-80 0 0' position='0.8 0.0 1.0' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 8000;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 8000;" material='opacity: 0;' width=2 position = "0.8 0.15 1.0" value="Add()"></a-text>
+        <a-box position='0 0.0 0.5' animation="property: position; to: 0.8 0.0 1.0; dur: 500; delay: 7000; loop: true;" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = "blue"></a-box>
+
+        <a-cylinder rotation='-80 0 0' position='1.6 0.0 1.0' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 8000;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 8000;" material='opacity: 0;' width=2 position = "1.6 0.15 1.0" value="Multiply()"></a-text>
+        <a-box position='0 0.0 0.5' animation="property: position; to: 1.6 0.0 1.0; dur: 500; delay: 7000; loop: true;" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = "blue"></a-box>
+
+        <a-cylinder rotation='-80 0 0' position='1.6 0.0 1.5' animation="property: material.opacity; to: 1.0; dur: 3000; delay: 12000;" height = 0.20; radius = 0.14 material='opacity: 0;' color = "orange"></a-cylinder>
+        <a-text rotation="0 0 0"  animation="property: rotation; to: -90 0 0; dur:3000 ; delay: 12000;" material='opacity: 0;' width=2 position = "1.6 0.15 1.5" value="Print_Result()"></a-text>
+        <a-box position='1.6 0.0 1.0' animation="property: position; to: 1.6 0.0 1.5; dur: 500; delay: 11000; loop: true;" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = "blue"></a-box>
+
+
+            <a-marker-camera preset='custom' type='pattern' url='/static/arjs_marker.patt'></a-marker-camera>
+            </a-scene>
+
+        </div>
+            </body>
+        </html>
+        

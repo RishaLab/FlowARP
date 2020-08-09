@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+    <!-- x z y -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body>
+
+<div>
+    
+    <a-scene { display: block; width: 50%; }>
+
+
+        
+        <!-- <a-box position="0 1.6 0" animation="property: position; to: 5 1.6 0; dur: 1500; easing: linear"></a-box> -->
+        <!-- <a-box position='0 0 0' animation="property: material.opacity; to: 0.0; dur: 6000; easing: linear" height = 0.40; width = 0.40; depth = 0.40; material='opacity: 1;' color = "orange"></a-box> -->
+        
+
+        <!-- int main(){
+            func1();
+            return 0;       
+        }
+        
+        
+        int func1(){
+            //does something and calls func 3
+            func4();
+            func3()
+            return 0;
+        }
+        
+        
+        int func3(){
+            //does something and calls func2 and func4
+            func4();
+            return 0;
+        }
+        
+        
+        int func4(){
+
+            //does something and calls func2 and func4
+            systemdefined_function();
+            return 0;
+        } -->
+        <a-image rotation="90 0 0" height=1.5 width=1.5 position='0.0 -1.0 0.0' src="#my-image"></a-image>
+        <a-box position='0.0 0.0 0.0' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "orange"></a-box>
+        
+        <a-box position='-0.6000000000000001 -0.9114121413123415 0.4' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "black"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "-0.6000000000000001 -0.7614121413123415 0.4" value="= (assign)"></a-text>        
+        <a-entity line="start: 0.0 0.0 0.0; end: -0.6000000000000001 -0.9114121413123415 0.4; color: red"></a-entity>
+        
+        <a-box position='-0.6000000000000001 0.4770412374016705 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "-0.6000000000000001 0.6270412374016705 1.2000000000000002" value="stack (id)"></a-text>        
+        <a-entity line="start: -0.6000000000000001 -0.9114121413123415 0.4; end: -0.6000000000000001 0.4770412374016705 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='-0.2 0.6687921480773393 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "purple"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "-0.2 0.8187921480773394 1.2000000000000002" value="[ ] (list)"></a-text>        
+        <a-entity line="start: -0.6000000000000001 -0.9114121413123415 0.4; end: -0.2 0.6687921480773393 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='-0.2 0.36034871605213414 0.4' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "green"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "-0.2 0.5103487160521342 0.4" value="append (func)"></a-text>        
+        <a-entity line="start: 0.0 0.0 0.0; end: -0.2 0.36034871605213414 0.4; color: red"></a-entity>
+        
+        <a-box position='0.2 0.9816505774275037 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "0.2 1.1316505774275036 1.2000000000000002" value="stack (id)"></a-text>        
+        <a-entity line="start: -0.2 0.36034871605213414 0.4; end: 0.2 0.9816505774275037 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='0.6000000000000001 0.8028555069920643 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "purple"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "0.6000000000000001 0.9528555069920643 1.2000000000000002" value="1 (value)"></a-text>        
+        <a-entity line="start: -0.2 0.36034871605213414 0.4; end: 0.6000000000000001 0.8028555069920643 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='0.2 0.9849198306525282 0.4' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "green"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "0.2 1.134919830652528 0.4" value="append (func)"></a-text>        
+        <a-entity line="start: 0.0 0.0 0.0; end: 0.2 0.9849198306525282 0.4; color: red"></a-entity>
+        
+        <a-box position='1.0 0.2008438843599617 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "1.0 0.3508438843599617 1.2000000000000002" value="stack (id)"></a-text>        
+        <a-entity line="start: 0.2 0.9849198306525282 0.4; end: 1.0 0.2008438843599617 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='1.4000000000000001 -0.928997352546515 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "purple"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "1.4000000000000001 -0.778997352546515 1.2000000000000002" value="3 (value)"></a-text>        
+        <a-entity line="start: 0.2 0.9849198306525282 0.4; end: 1.4000000000000001 -0.928997352546515 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='0.6000000000000001 0.10379401218858586 0.4' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "green"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "0.6000000000000001 0.2537940121885859 0.4" value="append (func)"></a-text>        
+        <a-entity line="start: 0.0 0.0 0.0; end: 0.6000000000000001 0.10379401218858586 0.4; color: red"></a-entity>
+        
+        <a-box position='1.8 -0.1406612977193522 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "1.8 0.009338702280647787 1.2000000000000002" value="stack (id)"></a-text>        
+        <a-entity line="start: 0.6000000000000001 0.10379401218858586 0.4; end: 1.8 -0.1406612977193522 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='2.2 0.2875279603859856 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "purple"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "2.2 0.4375279603859856 1.2000000000000002" value="2 (value)"></a-text>        
+        <a-entity line="start: 0.6000000000000001 0.10379401218858586 0.4; end: 2.2 0.2875279603859856 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='1.0 -0.5960642306828653 0.4' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "black"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "1.0 -0.44606423068286527 0.4" value="= (assign)"></a-text>        
+        <a-entity line="start: 0.0 0.0 0.0; end: 1.0 -0.5960642306828653 0.4; color: red"></a-entity>
+        
+        <a-box position='2.6 -0.15446122247307326 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "2.6 -0.004461222473073262 1.2000000000000002" value="b (id)"></a-text>        
+        <a-entity line="start: 1.0 -0.5960642306828653 0.4; end: 2.6 -0.15446122247307326 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='3.0 -0.7905345273540704 1.2000000000000002' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "red"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "3.0 -0.6405345273540703 1.2000000000000002" value="pop (func)"></a-text>        
+        <a-entity line="start: 1.0 -0.5960642306828653 0.4; end: 3.0 -0.7905345273540704 1.2000000000000002; color: red"></a-entity>
+        
+        <a-box position='-0.6000000000000001 0.12483044074355565 2.0' height = 0.20; width = 0.20; depth = 0.20; material='opacity: 1;' color = "blue"></a-box>
+        <a-text rotation="-90 0 0" width=2 position = "-0.6000000000000001 0.27483044074355567 2.0" value="stack (id)"></a-text>        
+        <a-entity line="start: 3.0 -0.7905345273540704 1.2000000000000002; end: -0.6000000000000001 0.12483044074355565 2.0; color: red"></a-entity>
+
+    <a-marker-camera preset='custom' type='pattern' url='/static/arjs_marker.patt'></a-marker-camera>
+    </a-scene>
+
+</div>
+    </body>
+</html>
