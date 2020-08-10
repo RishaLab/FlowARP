@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FlowARP</title>
+    
 </head>
 <body>
     <h1 class="head">FlowARP</h1>
         <h2>Visualizing Control Flows in Programming</h2>
-    
+    <div style="font-size: 20px;">
 
         Enter C++ Code below and press Generate.<br>
         Download the marker using the link given below.<br>
         Use the given marker to visualize the AR model. <br>
+</div>
+        <br><div style="font-size: 30px;">NOTE: <br>
+        <div class="warning">
+            
+            1) An example is already provided for experimentation. Follow the same format. <br>
+            1) Do not write code here, the platform does not support writing code. <br>
+            2) Syntax is not handled. Methods should be in the following manner:
+        </div>
 
+        <img style="width: 70%; margin-top: 30px;" src="{{url_for('static', filename='practice.png')}}" align="middle" />
+        
         <form id="content" action = "/generate" method = "post">
 
 
-            <div style="width: 50%; margin: auto;font-family: 'Courier New', Courier, monospace; margin-top: 40px; margin-bottom: 30px; text-align: left; background-color: rgb(112, 199, 233); border-radius: 5px;">
+            <div style="width: 50%; margin: auto;font-family: 'Courier New', Courier, monospace; margin-bottom: 30px; text-align: left; background-color: rgb(7, 63, 85); border-radius: 5px;">
             
         
             <br><br>    
@@ -54,7 +65,7 @@ void Calculate(){
 }
 
              </textarea>                
-             <br><br><br><br>
+             <br><br>
                 <div style="font-weight:bolder; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
                     int main() {
                     <br><br>    
@@ -89,21 +100,39 @@ return 0;
 <style>
 
 .head{
-    color: rgb(0, 0, 0);
+    font-size: 60px;
 }
 
    body {
        padding: 30px;
        text-align: center;
-  background-color: rgb(112, 199, 233);
+  background-color: rgb(7, 63, 85);
   color: rgb(2, 1, 1);
   margin: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.warning{
+    color: rgb(235, 160, 160);
+    font-size: 30px;
+    
+    
 }
 
 textarea {
+    font-size: 20px;
   resize: none;
 }
 
+#submit-btn{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
 </style>
+
 
 </html>
