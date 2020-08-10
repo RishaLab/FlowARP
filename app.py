@@ -102,7 +102,7 @@ def generate():
 
         def get_line(start, end, delay):
             # line = "        <a-box position=\'"+str(start)+"\' animation=\"property: position; to: "+ end +"; dur: 6000; delay: "+str(delay)+";\" height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"red"+"\"></a-box>\n"
-            line = "        <a-box position=\'"+str(start)+"\' animation=\"property: position; to: "+ end +"; dur: 500; delay: "+str(delay)+"; loop: true;\" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = \"blue\"></a-box>"
+            line = "        <a-box position=\'"+str(start)+"\' animation=\"property: position; to: "+ end +"; dur: 500; delay: "+str(delay)+"; loop: true;\" height = 0.040; width = 0.040; depth = 0.040; material='opacity: 1;' color = \"white\"></a-box>"
             return line
 
         def get_text(text, pos, delay):
