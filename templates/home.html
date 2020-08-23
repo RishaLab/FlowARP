@@ -23,7 +23,7 @@
             
             1) An example is already provided for experimentation. Follow the same format. <br>
             1) Do not write code here, the platform does not support writing code. <br>
-            2) Syntax is not handled. Methods should be in the following manner:
+            2) Syntax is not handled. Methods, loops, if statements etc. should be in the following manner:
         </div>
 
         <img style="width: 70%; margin-top: 30px;" src="{{url_for('static', filename='practice.png')}}" align="middle" />
@@ -35,7 +35,7 @@
             
         
             <br><br>    
-             <textarea style="width: 100%;" rows="20" name="nm" class="input" id="search-input">// Add functions here
+             <textarea style="width: 100%;" rows="10" name="nm" class="input" id="search-input">// Add functions here
 
 #include <iostream>
 
@@ -45,36 +45,59 @@ int Add(int x, int y){
     int result = x + y;
 };
 
-int Multiply(int x, int y){
-    int result = x * y;
-    Print_Result();
+void clean(){
+    *ans = 0;
 };
 
-void Input_Params(int *x, int *y){
-    cin >> *x;
-    cin >> *y;
-}
-
-void Print_Result(){
-    // do something
-}
-
-void Calculate(){
-    int x, y;
-    Input_Params();
-    Add();
-    Multiply();
-}
 
              </textarea>                
              <br><br>
                 <div style="font-weight:bolder; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
                     int main() {
                     <br><br>    
-                    <textarea style="width: 100%;" rows="10" name="nm2" class="input2" id="search-input2">// Define the main function here
+                    <textarea style="width: 100%;" rows="20" name="nm2" class="input2" id="search-input2">
 
-Calculate();
+
+int i = 5;
+int ans = add(5,4);
+
+int j = i * 3;
+
+bool flag = false;
+
+if(i != j){
+    print("true");
+    
+    while(i < 10){
+        j = j - 1;
+        i++;
+    }
+    print('done');
+    int k = add(i,j);
+
+}
+else{
+    int j = i + 5;
+    print('error');
+
+    for(ii = 0; ii < 10; ii ++){
+        int kk = add(ii, i);
+        if(kk > 20){
+            flag = true;
+            break;
+        }
+    }
+
+    if(flag){
+        print('complete');
+    }
+
+
+}
+
+clean();
 return 0;
+                        
                     </textarea>
                     <br><br>
                             }
@@ -96,8 +119,7 @@ return 0;
 
         <br><br>
         <div style="font-size: 22px; margin-bottom: 30px;">
-            Made by: Dheeraj Vagavolu<br>
-            Support and queries: vdheeraj.official@gmail.com
+            
     </div>
 
               
