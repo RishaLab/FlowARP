@@ -177,8 +177,8 @@ footer = '''
 
 
 def get_entity(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' height=0.30; width=0.50; depth="+hei+"; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
-    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.001; width=0.525; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
+    line = "        <a-box position=\'"+str(pos)+"\' height=0.20; width=0.30; depth="+hei+"; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
+    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.001; width=0.325; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
     line = line + line2
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
     # line = "        <a-cylinder rotation='-80 0 0' position=\'"+str(pos)+"\' animation=\"property: material.opacity; to: 1.0; dur: 3000; delay: "+str(delay)+";\" height = 0.20; radius = 0.14 material='opacity: 0;' color = \"orange\"></a-cylinder>"
@@ -186,7 +186,7 @@ def get_entity(pos, hei):
 
 
 def get_entity_red(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' height=0.25; width=0.50; depth="+hei+"; material=\'opacity: 1;\' color = \""+"red"+"\"></a-box>\n"
+    line = "        <a-box position=\'"+str(pos)+"\' height=0.15; width=0.50; depth="+hei+"; material=\'opacity: 1;\' color = \""+"red"+"\"></a-box>\n"
     line2 = "        <a-box position=\'"+str(pos)+"\' height=0.0015; width=0.525; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
     line = line + line2
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
@@ -196,24 +196,24 @@ def get_entity_red(pos, hei):
 
 
 def get_entity_violet(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.25; width=0.50; depth="+hei+"; color = \""+"#6a0dad"+"\"></a-box>\n"
-    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.0015; width=0.525; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
+    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.15; width=0.30; depth="+hei+"; color = \""+"#6a0dad"+"\"></a-box>\n"
+    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.0015; width=0.325; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
     line = line + line2
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
     # line = "        <a-cylinder rotation='-80 0 0' position=\'"+str(pos)+"\' animation=\"property: material.opacity; to: 1.0; dur: 3000; delay: "+str(delay)+";\" height = 0.20; radius = 0.14 material='opacity: 0;' color = \"orange\"></a-cylinder>"
     return line
 
 def get_entity_green(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' height=0.25; width=0.50; depth="+hei+"; material=\'opacity: 1;\' color = \""+"green"+"\"></a-box>\n"
-    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.0015; width=0.525; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
+    line = "        <a-box position=\'"+str(pos)+"\' height=0.15; width=0.30; depth="+hei+"; material=\'opacity: 1;\' color = \""+"green"+"\"></a-box>\n"
+    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.0015; width=0.325; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n"
     line = line + line2
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
     # line = "        <a-cylinder rotation='-80 0 0' position=\'"+str(pos)+"\' animation=\"property: material.opacity; to: 1.0; dur: 3000; delay: "+str(delay)+";\" height = 0.20; radius = 0.14 material='opacity: 0;' color = \"orange\"></a-cylinder>"
     return line
 
 def get_entity_yellow(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.25; width=0.40; depth="+hei+"; color = \""+"#9b870c"+"\"></a-box>\n"
-    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.001; width=0.45; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n" 
+    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.15; width=0.30; depth="+hei+"; color = \""+"#9b870c"+"\"></a-box>\n"
+    line2 = "        <a-box position=\'"+str(pos)+"\' height=0.001; width=0.35; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n" 
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
     # line = "        <a-cylinder rotation='-80 0 0' position=\'"+str(pos)+"\' animation=\"property: material.opacity; to: 1.0; dur: 3000; delay: "+str(delay)+";\" height = 0.20; radius = 0.14 material='opacity: 0;' color = \"orange\"></a-cylinder>"
     line = line + line2
@@ -246,7 +246,7 @@ def get_positions(blocks):
 
     prev_pos = [0, 0, 0]
 
-    const_x = -2
+    const_x = -1
 
     f = open('templates/index_test.html','w+')
 
@@ -256,7 +256,7 @@ def get_positions(blocks):
 
     pos_parent[0] = prev_pos
 
-    hei = len(blocks[0][0]) * 0.20
+    hei = len(blocks[0][0]) * 0.12
 
     
 
@@ -277,13 +277,13 @@ def get_positions(blocks):
 
         print(text)
 
-        hor_level[vert] += 1.75
+        hor_level[vert] += 1.00
 
         br = random.uniform(-0.3,0.3)
 
         lr = random.uniform(-0.3,0.3)
         
-        pos = [hor_level[vert]*1-lr + const_x, br, vert * 0.85]
+        pos = [hor_level[vert]*1-lr + const_x, br, vert * 0.65]
 
         text_pos = [pos[0] + 0.2, pos[1] + 0.15, pos[2]]
 
@@ -306,7 +306,7 @@ def get_positions(blocks):
 
         # f.write(get_entity(get_pos(pos)))
         f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line))
-        f.write(get_text(text,get_pos(text_pos), 5))
+        f.write(get_text(text,get_pos(text_pos), 3))
 
         pos_parent[num+1] = pos
         # prev_pos = pos
