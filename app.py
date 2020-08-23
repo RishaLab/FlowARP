@@ -212,7 +212,7 @@ def get_entity_green(pos, hei):
     return line
 
 def get_entity_yellow(pos, hei):
-    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.15; width=0.40; depth="+hei+"; color = \""+"#9b870c"+"\"></a-box>\n"
+    line = "        <a-box position=\'"+str(pos)+"\' animation=\"property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true\" height=0.25; width=0.40; depth="+hei+"; color = \""+"#9b870c"+"\"></a-box>\n"
     line2 = "        <a-box position=\'"+str(pos)+"\' height=0.001; width=0.45; depth="+hei+"8; material=\'opacity: 1;\' color = \""+"white"+"\"></a-box>\n" 
     # line = "        <a-box position=\'"+str(pos)+"\' height = 0.040; width = 0.040; depth = 0.040; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
     # line = "        <a-cylinder rotation='-80 0 0' position=\'"+str(pos)+"\' animation=\"property: material.opacity; to: 1.0; dur: 3000; delay: "+str(delay)+";\" height = 0.20; radius = 0.14 material='opacity: 0;' color = \"orange\"></a-cylinder>"
