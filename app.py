@@ -283,7 +283,7 @@ def get_positions(blocks):
 
         lr = random.uniform(-0.3,0.3)
         
-        pos = [hor_level[vert]*0.6-lr + const_x, br, vert * 0.65]
+        pos = [hor_level[vert]*1-lr + const_x, br, vert * 0.65]
 
         text_pos = [pos[0] + 0.2, pos[1] + 0.15, pos[2]]
 
