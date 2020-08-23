@@ -256,14 +256,14 @@ def get_positions(blocks):
 
     pos_parent[0] = prev_pos
 
-    hei = len(blocks[0][0]) * 0.12
+    hei = len(blocks[0][0]) * 0.1
 
     
 
     f.write(get_entity(get_pos(prev_pos), str(hei)))
     text_pos = [prev_pos[0] + 0.2, prev_pos[1] + 0.15, prev_pos[2]]
     text = "\n".join(blocks[0][0])
-    f.write(get_text(text,get_pos(text_pos), 5))
+    f.write(get_text(text,get_pos(text_pos), 3.5))
 
 
 
@@ -271,7 +271,7 @@ def get_positions(blocks):
         print(num, i)
         vert = i[2] + 1
 
-        hei = len(i[0]) * 0.20
+        hei = len(i[0]) * 0.1
 
         text = "\n".join(i[0])
 
@@ -306,7 +306,7 @@ def get_positions(blocks):
 
         # f.write(get_entity(get_pos(pos)))
         f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line))
-        f.write(get_text(text,get_pos(text_pos), 3))
+        f.write(get_text(text,get_pos(text_pos), 3.5))
 
         pos_parent[num+1] = pos
         # prev_pos = pos
