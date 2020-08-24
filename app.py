@@ -140,6 +140,7 @@ def get_stacks(data):
 def retrieve_lines():
     file_lines = open('new_target.cpp','r').readlines()
     file_lines = [i.strip() for i in file_lines if i.strip()!='']
+    file_lines = [i.replace('"', '\'')]
     return file_lines
 
 header = '''

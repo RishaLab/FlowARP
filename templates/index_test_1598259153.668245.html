@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+    <!-- x z y -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body>
+
+<div>
+    
+    <a-scene { display: block; width: 50%; }>
+        <a-box position='0 0 0' height=0.20; width=0.30; depth=0.4; material='opacity: 1;' color = "blue"></a-box>
+        <a-box position='0 0 0' height=0.001; width=0.325; depth=0.48; material='opacity: 1;' color = "white"></a-box>
+        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "0.2 0.15 0" value="int i = 5;
+int ans = add(5,4);
+int j = i * 3;
+bool flag = false;"></a-text>
+        <a-box position='-0.1464549538318578 0.13122183295856027 0.65' height=0.15; width=0.30; depth=0.2; material='opacity: 1;' color = "green"></a-box>
+        <a-box position='-0.1464549538318578 0.13122183295856027 0.65' height=0.0015; width=0.325; depth=0.28; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='0 0 0' animation="property: position; to: -0.1464549538318578 0.13122183295856027 0.65; dur: 500; delay: 9000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "0.05354504616814221 0.2812218329585603 0.65" value="if(i != j){
+print("true");"></a-text>
+        <a-box position='-0.17232227489736585 -0.02070447801318176 1.3' animation="property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true" height=0.15; width=0.30; depth=0.30000000000000004; color = "#6a0dad"></a-box>
+        <a-box position='-0.17232227489736585 -0.02070447801318176 1.3' height=0.0015; width=0.325; depth=0.300000000000000048; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='-0.1464549538318578 0.13122183295856027 0.65' animation="property: position; to: -0.17232227489736585 -0.02070447801318176 1.3; dur: 500; delay: 13000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "0.027677725102634165 0.12929552198681823 1.3" value="while(i < 10){
+j = j - 1;
+i++;"></a-text>
+        <a-box position='0.029114734971675604 -0.26847826751412823 1.9500000000000002' height=0.20; width=0.30; depth=0.2; material='opacity: 1;' color = "blue"></a-box>
+        <a-box position='0.029114734971675604 -0.26847826751412823 1.9500000000000002' height=0.001; width=0.325; depth=0.28; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='-0.17232227489736585 -0.02070447801318176 1.3' animation="property: position; to: 0.029114734971675604 -0.26847826751412823 1.9500000000000002; dur: 500; delay: 17000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "0.22911473497167562 -0.11847826751412824 1.9500000000000002" value="print('done');
+int k = add(i,j);"></a-text>
+        <a-box position='1.2034110751640812 -0.2626486644267122 1.3' height=0.15; width=0.50; depth=0.30000000000000004; material='opacity: 1;' color = "red"></a-box>
+        <a-box position='1.2034110751640812 -0.2626486644267122 1.3' height=0.0015; width=0.525; depth=0.300000000000000048; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='-0.1464549538318578 0.13122183295856027 0.65' animation="property: position; to: 1.2034110751640812 -0.2626486644267122 1.3; dur: 500; delay: 21000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "1.4034110751640811 -0.1126486644267122 1.3" value="else{
+int j = i + 5;
+print('error');"></a-text>
+        <a-box position='-0.28051652663938587 0.212667117931092 3.25' animation="property: material.opacity; from: 0.4; to: 1; dur: 1000; loop: true" height=0.15; width=0.30; depth=0.2; color = "#9b870c"></a-box>
+        <a-box position='-0.28051652663938587 0.212667117931092 3.25' height=0.001; width=0.35; depth=0.28; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='1.2034110751640812 -0.2626486644267122 1.3' animation="property: position; to: -0.28051652663938587 0.212667117931092 3.25; dur: 500; delay: 25000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "-0.08051652663938585 0.36266711793109196 3.25" value="for(ii = 0; ii < 10; ii ++){
+int kk = add(ii, i);"></a-text>
+        <a-box position='-0.0979444182725453 -0.095843190354931 3.9000000000000004' height=0.15; width=0.30; depth=0.30000000000000004; material='opacity: 1;' color = "green"></a-box>
+        <a-box position='-0.0979444182725453 -0.095843190354931 3.9000000000000004' height=0.0015; width=0.325; depth=0.300000000000000048; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='-0.28051652663938587 0.212667117931092 3.25' animation="property: position; to: -0.0979444182725453 -0.095843190354931 3.9000000000000004; dur: 500; delay: 29000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "0.10205558172745471 0.054156809645069 3.9000000000000004" value="if(kk > 20){
+flag = true;
+break;"></a-text>
+        <a-box position='0.8031631383614077 0.08160270311589618 3.9000000000000004' height=0.15; width=0.30; depth=0.2; material='opacity: 1;' color = "green"></a-box>
+        <a-box position='0.8031631383614077 0.08160270311589618 3.9000000000000004' height=0.0015; width=0.325; depth=0.28; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='-0.28051652663938587 0.212667117931092 3.25' animation="property: position; to: 0.8031631383614077 0.08160270311589618 3.9000000000000004; dur: 500; delay: 33000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "1.0031631383614077 0.23160270311589617 3.9000000000000004" value="if(flag){
+print('complete');"></a-text>
+        <a-box position='0.9206464645925114 -0.16394929732354158 3.25' height=0.20; width=0.30; depth=0.2; material='opacity: 1;' color = "blue"></a-box>
+        <a-box position='0.9206464645925114 -0.16394929732354158 3.25' height=0.001; width=0.325; depth=0.28; material='opacity: 1;' color = "white"></a-box>
+        <a-box position='1.2034110751640812 -0.2626486644267122 1.3' animation="property: position; to: 0.9206464645925114 -0.16394929732354158 3.25; dur: 500; delay: 37000; loop: true;" height = 0.080; width = 0.080; depth = 0.080; material='opacity: 1;' color = "lightblue"></a-box>        <a-text rotation="-90 0 0" material='opacity: 1;' width=1.9444444444444444 position = "1.1206464645925114 -0.013949297323541582 3.25" value="clean();
+return 0;"></a-text>
+
+    <a-marker-camera preset='custom' type='pattern' url='/static/arjs_marker.patt'></a-marker-camera>
+    </a-scene>
+
+</div>
+    </body>
+</html>
