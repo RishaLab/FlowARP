@@ -5,9 +5,8 @@ import re
 from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
-import re
-import sys
-import random
+
+import time
 
 def isFuncdef(line):
     if '){' in line:
@@ -318,6 +317,8 @@ def get_positions(blocks):
 
 @app.route('/')
 def home():
+    open('templates/index_test.html', 'w').close()
+    time.sleep(1)
     return render_template('home.html')
 
 @app.route('/generate', methods =['POST','GET'])
