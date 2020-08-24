@@ -4,9 +4,10 @@ import re
 
 from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
-
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 import time
+
 
 def isFuncdef(line):
     if '){' in line:
@@ -174,6 +175,8 @@ footer = '''
 </html>
 '''
 
+global global_num
+global_num = 2
 
 def get_entity(pos, hei):
     line = "        <a-box position=\'"+str(pos)+"\' height=0.20; width=0.30; depth="+hei+"; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
@@ -247,7 +250,7 @@ def get_positions(blocks):
 
     const_x = -1
 
-    f = open('templates/index_test.html','w+')
+    f = open('templates/index_test_'+str(global_num)+'.html','w+')
 
     f.write(header)
 
@@ -317,13 +320,15 @@ def get_positions(blocks):
 
 @app.route('/')
 def home():
-    open('templates/index_test.html', 'w').close()
+    global global_num
+    # open('templates/index_test.html', 'w').close()
     time.sleep(1)
     return render_template('home.html')
 
 @app.route('/generate', methods =['POST','GET'])
 def generate():
     if request.method =='POST':
+        global global_num
         code = request.form['nm2']
         file_lines = code.split('\n')
         file_lines = [i.strip() for i in file_lines if i.strip()!='']
@@ -336,7 +341,8 @@ def generate():
 
         get_positions(data_blocks)
 
-        return render_template('index_test.html')
+        return render_template('index_test_'+str(global_num)+'.html')
+        global_num+=1 
         
 @app.after_request
 def add_header(r):
