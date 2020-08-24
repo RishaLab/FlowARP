@@ -8,7 +8,6 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 import time
 
-
 def isFuncdef(line):
     if '){' in line:
         x = re.search("[A-Za-z_0-9]*\(", line)
@@ -175,8 +174,6 @@ footer = '''
 </html>
 '''
 
-global global_num
-global_num = 2
 
 def get_entity(pos, hei):
     line = "        <a-box position=\'"+str(pos)+"\' height=0.20; width=0.30; depth="+hei+"; material=\'opacity: 1;\' color = \""+"blue"+"\"></a-box>\n"
@@ -243,14 +240,14 @@ def get_pos(pos):
     return pos_str
 
 
-def get_positions(blocks):
+def get_positions(blocks, ticks):
     hor_level = [0 for i in range(100)]
 
     prev_pos = [0, 0, 0]
 
     const_x = -1
 
-    f = open('templates/index_test_'+str(global_num)+'.html','w+')
+    f = open('templates/index_test_'+ticks+'.html','w+')
 
     f.write(header)
 
@@ -320,29 +317,32 @@ def get_positions(blocks):
 
 @app.route('/')
 def home():
-    global global_num
-    # open('templates/index_test.html', 'w').close()
+    open('templates/index_test.html', 'w').close()
     time.sleep(1)
     return render_template('home.html')
 
 @app.route('/generate', methods =['POST','GET'])
 def generate():
     if request.method =='POST':
-        global global_num
         code = request.form['nm2']
         file_lines = code.split('\n')
         file_lines = [i.strip() for i in file_lines if i.strip()!='']
         file_lines.append('}')
+
+
+        
+        ticks = str(time.time())
+
+
         print(file_lines)
 
         data = get_type_togethorness(file_lines)
 
         data_blocks = get_stacks(data)
 
-        get_positions(data_blocks)
+        get_positions(data_blocks, ticks)
 
-        return render_template('index_test_'+str(global_num)+'.html')
-        global_num+=1 
+        return render_template('index_test_'+ticks+'.html')
         
 @app.after_request
 def add_header(r):
