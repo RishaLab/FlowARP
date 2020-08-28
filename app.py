@@ -306,6 +306,9 @@ def get_positions(blocks, ticks):
 
         # f.write(get_entity(get_pos(pos)))
         f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line))
+        f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line+2000))
+        f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line+4000))
+        f.write(get_line(get_pos(pos), get_pos(pos_parent[i[2]]), delay_line+6000))
         f.write(get_text(text,get_pos(text_pos), 3.5))
 
         pos_parent[num+1] = pos
